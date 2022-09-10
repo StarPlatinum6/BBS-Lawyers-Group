@@ -22,10 +22,6 @@ a {
 
 /* Estilos para header de index.html */
 
-
-
-/* Estilos para main de index.html */
-
 .index__main--bloqueLogo {
     display: flex;
 }
@@ -33,6 +29,43 @@ a {
 .index__main--bloqueLogo img {
     width: 100%;
 }
+
+.index__main--carouselItem1 h2 {
+    font-family: 'Lato', sans-serif;
+    color: #4974a5; 
+}
+
+.index__main--carouselItem1 p {
+    font-family: 'Nunito', sans-serif;
+    color: #dadada;
+}
+
+.index__main--carouselItem2 h2 {
+    font-family: 'Lato', sans-serif;
+    color: #4974a5;
+    text-align: left;
+}
+
+.index__main--carouselItem2 p {
+    font-family: 'Nunito', sans-serif;
+    color: #828282;
+    text-align: left;
+}
+
+.index__main--carouselItem3 h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #4974a5;
+    text-align: right;
+}
+
+.index__main--carouselItem3 p {
+    font-family: 'Nunito', sans-serif;
+    color: #dadada;
+    text-align: right;
+}
+
+/* Estilos para main de index.html */
 
 .index__main--bloqueTexto1 {
     background: #4974a5;
