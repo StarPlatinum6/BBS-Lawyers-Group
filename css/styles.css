@@ -20,6 +20,10 @@ a {
     color: #4974a5;
 }
 
+:root {
+    --animate-duration: 1.5s;
+}
+
 /* Estilos para header de index.html */
 
 .index__main--bloqueLogo {
