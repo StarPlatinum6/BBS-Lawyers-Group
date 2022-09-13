@@ -131,16 +131,16 @@ transform: rotate(-135deg);
     width: 300px;
 }
 
-.index__main--barraNav {
+.index__header--barraNav {
     background-color: rgb(250, 250, 250);
 }
 
-.index__main--navItems {
+.index__header--navItems {
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.index__main--navItems li {
+.index__header--navItems li {
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     font-size: .9rem;
@@ -169,42 +169,45 @@ transform: rotate(-135deg);
 /* Estilos carousel header */
 /* ============================= */
 
-.index__main--carouselItem1 h2 {
+.index__header--carouselItem1 h2 {
     font-family: 'Lato', sans-serif;
     color: #4974a5; 
 }
 
-.index__main--carouselItem1 p {
+.index__header--carouselItem1 p {
     font-family: 'Nunito', sans-serif;
     color: #dadada;
 }
 
-.index__main--carouselItem2 h2 {
+.index__header--carouselItem2 h2 {
     font-family: 'Lato', sans-serif;
     color: #4974a5;
     text-align: left;
 }
 
-.index__main--carouselItem2 p {
+.index__header--carouselItem2 p {
     font-family: 'Nunito', sans-serif;
     color: #828282;
     text-align: left;
 }
 
-.index__main--carouselItem3 h2 {
+.index__header--carouselItem3 h2 {
     font-family: 'Lato', sans-serif;
     font-weight: 600;
     color: #4974a5;
     text-align: right;
 }
 
-.index__main--carouselItem3 p {
+.index__header--carouselItem3 p {
     font-family: 'Nunito', sans-serif;
     color: #dadada;
     text-align: right;
 }
 
+/* ============================= */
 /* Estilos para main de index.html */
+/* ============================= */
+
 
 .index__main--bloqueTexto1 {
     background: #4974a5;
@@ -475,7 +478,10 @@ input[type='radio']:checked:after {
     padding: 10px;
 }
 
-/* Estilos para footer */
+/* ============================= */
+    /* Estilos para footer */
+/* ============================= */
+
 
 .footer__bloque {
     background-color: #161616;
@@ -551,6 +557,56 @@ input[type='radio']:checked:after {
     padding-bottom: 5px;
     font-size: 0.7rem;
 }
+
+/* ============================= */
+/* Estilos para Header subpáginas */
+/* ============================= */
+
+.header__secondary--cajaTexto {
+    background-image: url(../assets/images/portadaspages/conozcanosbn.jpg);
+    background-position: center;
+    height: 240px;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.header__secondary--cajaTexto h1 {
+    font-family: 'Lato', sans-serif;
+    color: #4974a5; 
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.header__secondary--cajaTexto p {
+    font-family: 'Nunito', sans-serif;
+    color: #dadada;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.conozcanos__main--contacto {
+    padding: 15px 60px;
+    text-align: left;
+}
+
+.conozcanos__main--contacto h5 {
+    font-family: 'Lato', sans-serif;
+    color: #454545;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.conozcanos__main--contacto li {
+    font-family: 'Lato', sans-serif;
+    color: #adadad;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    list-style: none;
+}
+
+
 
 /*
 font-family: 'Lato', sans-serif; 
