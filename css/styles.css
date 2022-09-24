@@ -21,6 +21,11 @@ a {
     color: #4974a5;
 }
 
+a:hover {
+    text-decoration: none;
+    color: #588dca;
+}
+
 :root {
     --animate-duration: 1.5s;
 }
@@ -549,6 +554,15 @@ input[type='radio']:checked:after {
     color:#d4d4d4;
 }
 
+.footer__bloque--seccion2 a {
+    color:#b1b1b1;
+}
+
+.footer__bloque--seccion2 a:hover {
+    color: #4974a5;
+    transition: all .3s ease;
+}
+
 .footer__copy {
     background-color: #262626;
     color: #afafaf;
@@ -650,6 +664,11 @@ input[type='radio']:checked:after {
     font-size: 1.5rem;
 }
 
+.contacto__main--bloqueTexto1 a {
+    transition: all .5s ease;
+}
+
+
 .contacto__main--bloqueTexto3 {
     background-image: url(../assets/images/portadaspages/contacto1.jpg);
     background-size: cover;
@@ -683,6 +702,11 @@ input[type='radio']:checked:after {
     font-size: 1.8rem;
 }
 
+.contacto__main--bloqueTexto3 i:hover {
+    background-color: #588dca;
+    transition: all .5s ease;
+}
+
 .contacto__main--bloqueTexto3 .bi-telephone {
     bottom: 45px;
 }
@@ -706,8 +730,17 @@ input[type='radio']:checked:after {
     bottom: 20px;
 }
 
+/* ============================= */
+/* Estilos para Servicios
+/* ============================= */
 
 
+
+
+.servicios__main--bloqueTexto2 img {
+    float: left;
+    width: 250px;
+}
 
 
 /*
