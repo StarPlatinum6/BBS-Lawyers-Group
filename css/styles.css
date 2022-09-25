@@ -224,17 +224,21 @@ transform: rotate(-135deg);
 .index__main--bloqueTexto1 p {
     color: rgb(247, 247, 247);
     font-weight: 300;
+    text-align: justify;
+    padding-top: 6px;
 }
 
 .index__main--bloqueTexto2 {
     background-image: url(../assets/images/backgroundmain1.jpg);
     padding: 50px 80px;
     font-family: 'Montserrat', sans-serif;
+    text-align: justify;
 }
 
 .index__main--bloqueTexto2 p {
     color: #828282;
     font-weight: 400;
+    padding-top: 6px;
 }
 
 .index__main--bloqueTexto1 h2, .index__main--bloqueTexto2 h2 {
@@ -250,6 +254,7 @@ transform: rotate(-135deg);
 .index__main--bloqueTexto3 {
     color: #fff;
     padding: 30px 50px;
+    text-align: justify;
 }
 
 .index__main--bloqueTexto3 div {
@@ -308,6 +313,7 @@ transform: rotate(-135deg);
 
 .index__main--areasTrabajo1 {
     text-align: center;
+    padding-bottom: 15px;
 }
 
 .index__main--areasTrabajo1 p {
@@ -317,7 +323,13 @@ transform: rotate(-135deg);
 .index__main--areasTrabajo2 {
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+}
+
+.index__main--areasTrabajo2 a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .index__main--areasTrabajo2 div {
@@ -378,6 +390,8 @@ transform: rotate(-135deg);
 
 .index__main--equipo {
     background-color: rgb(236, 236, 236);
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .index__main--equipo h2 {
@@ -405,6 +419,7 @@ transform: rotate(-135deg);
     font-family: 'Montserrat', sans-serif;
     font-size: .8rem;
     line-height: 1.5rem;
+    text-align: justify;
 }
 
 .index__main--equipo i {
@@ -494,6 +509,7 @@ input[type='radio']:checked:after {
 
 .footer__bloque--seccion1, .footer__bloque--seccion2, .footer__bloque--seccion3 {
     padding: 15px 60px;
+    text-align: justify;
 }
 
 .footer__bloque--seccion1 h5, .footer__bloque--seccion2 h5, .footer__bloque--seccion3 h5 {
@@ -502,7 +518,7 @@ input[type='radio']:checked:after {
     font-weight: 200;
 }
 
-.footer__bloque--seccion1 li,.footer__bloque--seccion3 li {
+.footer__bloque--seccion3 li {
     font-family: 'Lato', sans-serif;
     color: #adadad;
     font-size: 0.8rem;
@@ -645,6 +661,7 @@ input[type='radio']:checked:after {
     font-family: 'Montserrat', sans-serif;
     background-size: cover;
     background-position: center;
+    text-align: center;
 }
 
 .contacto__main--bloqueTexto1 p, .contacto__main--bloqueTexto2 p {
@@ -764,14 +781,16 @@ input[type='radio']:checked:after {
     font-size: .9rem;
     line-height: 1.5rem;
     letter-spacing: .9px;
+    text-align: justify;
 }
 
 .servicios__main--bloqueTexto2 {
     font-family: 'Montserrat', sans-serif;
     font-size: .9rem;
     line-height: 1.5rem;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     letter-spacing: .8px;
+    text-align: justify;
 }
 
 .servicios__main--bloqueTexto2 img {
@@ -785,10 +804,11 @@ input[type='radio']:checked:after {
 }
 
 .servicios__main--acordeon {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 1px;
     font-weight: 200;
+    text-align: justify;
 }
 
 .accordion-item {
