@@ -599,7 +599,7 @@ input[type='radio']:checked:after {
     max-width: 1400px;
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
 }
 
 .header__secondary--cajaTexto h1 {
@@ -609,6 +609,13 @@ input[type='radio']:checked:after {
     font-size: 2.3rem;
 }
 
+.header__secondary--cajaTexto h3 {
+    font-family: 'Nunito', sans-serif;
+    color: #dadada;
+    text-align: center;
+}
+
+
 .header__secondary--cajaTexto p {
     font-family: 'Nunito', sans-serif;
     color: #dadada;
@@ -617,7 +624,7 @@ input[type='radio']:checked:after {
 }
 
 /* ============================= */
-/* Estilos para conozcanos.html
+/* Estilos para conozcanos.html */
 /* ============================= */
 
 .conozcanos__main--contacto {
@@ -641,7 +648,7 @@ input[type='radio']:checked:after {
 }
 
 /* ============================= */
-/* Estilos para contacto.html
+/* Estilos para contacto.html */
 /* ============================= */
 
 .contacto__main--mapa {
@@ -748,7 +755,7 @@ input[type='radio']:checked:after {
 }
 
 /* ============================= */
-/* Estilos para Servicios
+/* Estilos para Servicios */
 /* ============================= */
 
 .servicios__main {
@@ -856,6 +863,53 @@ input[type='radio']:checked:after {
     color: #4974a5;
     border-width: 2px;
     opacity: 100;
+}
+
+/* ============================= */
+/* Estilos para Página 404 */
+/* ============================= */
+
+.pag404__main--bloqueTexto {
+    margin: 70px 70px;
+    text-align: center;
+}
+
+.pag404__main--bloqueTexto div {
+    background-color: #4974a5;
+    padding: 30px 10px;
+}
+
+.pag404__main--bloqueTexto div i, .pag404__main--bloqueTexto div h1, .pag404__main--bloqueTexto div h4, .pag404__main--bloqueTexto div span {
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+    color: #e3f2fd;
+}
+
+.pag404__main--bloqueTexto div i {
+    font-size: 5rem;
+    padding: 0;
+}
+
+.pag404__main--bloqueTexto div h1 {
+    font-size: 2.8rem;
+}
+
+.pag404__main--bloqueTexto div h4 {
+    padding: 0px 30px;
+    line-height: 2rem;
+}
+
+.pag404__main--bloqueTexto div a {
+    padding: 0px 40px;
+}
+
+.pag404__main--bloqueTexto div a p {
+    margin-top: 40px;
+    margin: 0px 50px;
+    color: #e3f2fd;
+    background-color: #588dca;
+    padding: 12px 0px;
+    font-size: 1.2rem;
 }
 
 /*
