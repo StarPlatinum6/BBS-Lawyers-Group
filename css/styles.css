@@ -912,6 +912,182 @@ input[type='radio']:checked:after {
     font-size: 1.2rem;
 }
 
+/* ============================= */
+/* Estilos para Clientes */
+/* ============================= */
+
+/* ============================= */
+/* Primer Slider - Clientes */
+/* ============================= */
+
+.clientes__main {
+    color: #444;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.slider {
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.slider__nav {
+    width: 12px;
+    height: 12px;
+    margin: 2rem 12px;
+    border-radius: 50%;
+    z-index: 10;
+    outline: 6px solid #ccc;
+    outline-offset: -6px;
+    cursor: pointer;
+    appearance: none;
+}
+
+.slider__nav:checked {
+    animation: check 0.7s linear forwards;
+}
+
+.slider__nav:checked:nth-of-type(1) ~ .slider__inner {
+    left: 0%;
+}
+
+.slider__nav:checked:nth-of-type(2) ~ .slider__inner {
+    left: -100%;
+}
+.slider__nav:checked:nth-of-type(3) ~ .slider__inner {
+    left: -200%;
+}
+
+.slider__nav:checked:nth-of-type(4) ~ .slider__inner {
+    left: -300%;
+}
+
+.slider__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    transition: left 0.4s;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.slider__contents {
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider__caption {
+    font-weight: 500;
+    margin: 2rem 0 1rem;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+
+.slider__txt {
+    color: #999;
+    margin-bottom: 3rem;
+    max-width: 300px;
+}
+
+@keyframes check {
+    50% {
+    box-shadow: 0 0 0 6px #454545, 0 0 0 18px rgba(69, 69, 69, 0.2);
+    }
+    100% {
+    box-shadow: 0 0 0 0 #454545, 0 0 0 0 rgba(69, 69, 69, 0);
+    }
+}
+
+/* ============================= */
+/* Segundo Slider - Testimonios */
+/* ============================= */
+
+.clientes__main--testimonios {
+    height: 760px;
+    background: url(../assets/images/clientes/testimonials.jpg);
+    min-height: 375px;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: center;
+    background-size: cover;
+}
+
+.clientes__main--titular {
+    text-align: center;
+    font-size: 34px;
+    position: relative;
+    margin-bottom: 70px;
+    color: #ffffff;
+    font-family: 'montserrat', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.clientes__main--titular:after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 40px;
+    width: 180px;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    background: url(https://i.ibb.co/d7tSD1R/heading-line-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clientes__main--carouselItems {
+    display: flex;
+    color: #FFFFFF;
+}
+
+.clientes__main--carouselItems img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.clientes__main--imagenItem {
+    display: flex;
+    justify-content: center;
+}
+
+.clientes__main--carouselItems p {
+    padding-top: 50px;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    font-size: .8rem;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 200;
+}
+
+.clientes__main--carouselItems h2 {
+    text-align: center;
+    margin: auto;
+    font-family: 'montserrat', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 300;
+    padding: 30px;
+}
+
 /*
 font-family: 'Lato', sans-serif; 
 font-family: 'Montserrat', sans-serif; textos parrafos
