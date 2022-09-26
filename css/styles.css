@@ -1017,7 +1017,7 @@ input[type='radio']:checked:after {
 /* ============================= */
 
 .clientes__main--testimonios {
-    height: 760px;
+    height: 850px;
     background: url(../assets/images/clientes/testimonials.jpg);
     min-height: 375px;
     position: relative;
@@ -1031,28 +1031,19 @@ input[type='radio']:checked:after {
     text-align: center;
     font-size: 34px;
     position: relative;
-    margin-bottom: 70px;
     color: #ffffff;
     font-family: 'montserrat', sans-serif;
     letter-spacing: 3px;
     font-weight: 300;
 }
 
-.clientes__main--titular:after {
-    content: ' ';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    height: 40px;
-    width: 180px;
-    border-radius: 4px;
-    transform: translateX(-50%);
-    background: url(https://i.ibb.co/d7tSD1R/heading-line-white.png);
-    background-repeat: no-repeat;
-    background-position: center;
+.clientes__main--linea {
+    display: flex;
+    justify-content: center;
 }
 
 .clientes__main--carouselItems {
+    margin-top: 20px;
     display: flex;
     color: #FFFFFF;
 }
@@ -1072,7 +1063,7 @@ input[type='radio']:checked:after {
 .clientes__main--carouselItems p {
     padding-top: 50px;
     width: 60%;
-    text-align: center;
+    text-align: justify;
     margin: auto;
     font-size: .8rem;
     font-family: 'montserrat', sans-serif;
@@ -1086,6 +1077,14 @@ input[type='radio']:checked:after {
     letter-spacing: 3px;
     font-weight: 300;
     padding: 30px;
+}
+
+.clientes__main--carouselItems h6 {
+    text-align: center;
+    margin: auto;
+    font-family: 'montserrat', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 300;
 }
 
 /*
