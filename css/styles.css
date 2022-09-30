@@ -261,7 +261,7 @@ transform: rotate(-135deg);
     margin: 20px 0px;
 }
 
-.index__main--bloqueTexto3 h3, .index__main--bloqueTexto3 h4 {
+.index__main--bloqueTexto3 h2, .index__main--bloqueTexto3 h4 {
     font-family: 'Nunito', sans-serif;
     font-weight: 300;
 }
@@ -283,7 +283,7 @@ transform: rotate(-135deg);
     opacity: .97;
 }
 
-.index__main--bloqueTexto5 h3 {
+.index__main--bloqueTexto5 h2 {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
