@@ -255,10 +255,15 @@ transform: rotate(-135deg);
     color: #fff;
     padding: 30px 50px;
     text-align: justify;
+    margin-bottom: 20px;
 }
 
 .index__main--bloqueTexto3 div {
     margin: 20px 0px;
+}
+
+.index__main--bloqueTexto3 h2 {
+    margin-bottom: 20px;
 }
 
 .index__main--bloqueTexto3 h2, .index__main--bloqueTexto3 h4 {
@@ -283,8 +288,14 @@ transform: rotate(-135deg);
     opacity: .97;
 }
 
+.index__main--bloqueTexto5 {
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
 .index__main--bloqueTexto5 h2 {
     font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 20px;
 }
 
 .index__main--bloqueTexto5 h4 {
@@ -314,6 +325,7 @@ transform: rotate(-135deg);
 .index__main--areasTrabajo1 {
     text-align: center;
     padding-bottom: 15px;
+    margin-top: 20px;
 }
 
 .index__main--areasTrabajo1 p {
@@ -324,6 +336,7 @@ transform: rotate(-135deg);
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .index__main--areasTrabajo2 a {
@@ -386,6 +399,7 @@ transform: rotate(-135deg);
 .index__main--linea1 {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .index__main--equipo {
@@ -402,6 +416,7 @@ transform: rotate(-135deg);
     width: 30%;
     border-radius: 2%;
     transition: all .5s ease;
+    margin-bottom: 30px;
 }
 
 .index__main--equipo img:hover {
@@ -450,21 +465,38 @@ transform: rotate(-135deg);
     align-items: center;
     background-image: url(../assets/images/fondoContacto2.jpg);
     background-size: cover;
-    color:#fff
+    color:#fff;
+    padding-top: 20px;
 }
 
 .index__main--areaContacto h2 {
     font-family: 'Nunito', sans-serif;
+    padding-top: 20px;
 }
 
 .index__main--areaContacto p {
     font-family: 'Montserrat', sans-serif;
     padding: 0px 20px;
     text-align: center;
+    padding-top: 20px;
+    margin-bottom: 0px;
 }
 
 .index__main--areaContacto form {
     font-family: 'Montserrat', sans-serif;
+}
+
+.index__main--areaContacto form div {
+    padding-top: 20px;
+}
+
+.index__main--areaContacto form textarea {
+    margin-top: 20px;
+}
+
+.index__main--areaContacto form button {
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .index__main--areaFormulario {
@@ -505,6 +537,7 @@ input[type='radio']:checked:after {
 
 .footer__bloque {
     background-color: #161616;
+    padding-top: 20px;
 }
 
 .footer__bloque--seccion1, .footer__bloque--seccion2, .footer__bloque--seccion3 {
@@ -686,6 +719,7 @@ input[type='radio']:checked:after {
 .contacto__main--bloqueTexto1 p {
     text-align: center;
     font-size: 1.5rem;
+    margin-top: 35px;
 }
 
 .contacto__main--bloqueTexto1 a {
@@ -837,6 +871,10 @@ input[type='radio']:checked:after {
 .accordion-button:not(.collapsed) {
     background-color: #ffffff;
     color: #588dca;
+}
+
+.servicios__main--bloqueTexto3 {
+    margin-top: 40px;
 }
 
 .servicios__main--bloqueTexto3 h4 {
