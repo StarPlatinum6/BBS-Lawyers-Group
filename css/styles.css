@@ -530,6 +530,33 @@ input[type='radio']:checked:after {
     padding: 10px;
 }
 
+/* Queries para main de index.html */
+
+@media (min-width: 577px) and (max-width: 767px)  {
+    .index__main--bloqueTexto3 {
+        padding: 30px 80px;
+    }
+    .index__main--area1,.index__main--area2,.index__main--area3,.index__main--area4,.index__main--area5,.index__main--area6 {
+        width: 100px;
+    }
+    .index__main--areasTrabajo2 a {
+        width: 85%;
+        padding: 10px 0px;
+    }
+    .index__main--bloqueTexto5 {
+        width: 85%;
+    }
+    .index__main--equipo img {
+        width: 26%;
+    }
+    .index__main--equipo p {
+        padding: 4px 80px 4px 80px;
+    }
+    .index__main--areaContacto {
+        padding: 20px 50px 0px 50px;
+    }
+}
+
 /* ============================= */
     /* Estilos para footer */
 /* ============================= */
@@ -621,6 +648,14 @@ input[type='radio']:checked:after {
     font-size: 0.7rem;
 }
 
+/* Queries para footer */
+
+@media (min-width: 577px) and (max-width: 767px)  {
+    .footer__bloque--seccion1 {
+        padding-right: 200px;
+    }
+}
+
 /* ============================= */
 /* Estilos para Header subpáginas */
 /* ============================= */
@@ -678,6 +713,14 @@ input[type='radio']:checked:after {
     font-size: 0.8rem;
     line-height: 2rem;
     list-style: none;
+}
+
+/* Queries para conozcanos.html */
+
+@media (min-width: 577px) and (max-width: 767px)  {
+    .conozcanos__main--contacto {
+        padding: 15px 100px;
+    }
 }
 
 /* ============================= */
@@ -786,6 +829,14 @@ input[type='radio']:checked:after {
     padding-top: 15px;
     position: relative;
     bottom: 20px;
+}
+
+/* Queries para contacto.html */
+
+@media (min-width: 577px) and (max-width: 767px)  {
+    .contacto__main--bloqueTexto3 div {
+        margin: 0px 40px 20px 40px;
+    }
 }
 
 /* ============================= */
@@ -903,6 +954,34 @@ input[type='radio']:checked:after {
     opacity: 100;
 }
 
+/* Queries para Servicios */
+
+@media (min-width: 577px) and (max-width: 767px)  {
+    .servicios__main img:nth-last-child(4) {
+        width: 85%;
+        margin: auto;
+    }
+    .servicios__main img:nth-last-child(6) {
+        width: 85%;
+        margin: auto;
+    }
+    .servicios__main--bloqueTexto1 {
+        padding: 0px 10px;
+        padding-bottom: 10px;
+    }
+    .servicios__main--bloqueTexto2 {
+        padding: 0px 10px;
+        padding-bottom: 30px;
+    }
+    .servicios__main--acordeon {
+        padding: 0px 10px 30px 10px;
+    }
+    .servicios__main--bloqueTexto3 {
+        padding: 0px 10px;
+    }
+
+}
+
 /* ============================= */
 /* Estilos para Página 404 */
 /* ============================= */
@@ -948,6 +1027,14 @@ input[type='radio']:checked:after {
     background-color: #588dca;
     padding: 12px 0px;
     font-size: 1.2rem;
+}
+
+/* Queries para Página 404 */
+
+@media (min-width: 577px) and (max-width: 767px)  {
+    .pag404__main--bloqueTexto {
+        padding: 0px 40px;
+    }
 }
 
 /* ============================= */
