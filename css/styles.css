@@ -131,7 +131,20 @@ transform: rotate(-135deg);
 /* FIN Icono hamburguesa animado */
 /* ============================= */
 
-.logo {
+.index__main--divLogo {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: rgb(250, 250, 250)
+}
+
+main {
+    background-color: rgb(250, 250, 250)
+}
+
+.index__header--logo {
     padding: 20px 0;
     width: 300px;
 }
@@ -143,6 +156,7 @@ transform: rotate(-135deg);
 .index__header--navItems {
     flex-direction: row;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 .index__header--navItems li {
@@ -474,7 +488,6 @@ transform: rotate(-135deg);
 
 .index__main--equipo h2, .index__main--equipo h4, .index__main--equipo div {
     text-align: center;
-    /* padding: 10px; */
     font-family: 'Nunito', sans-serif;
 }
 
@@ -609,17 +622,13 @@ input[type='radio']:checked:after {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
     .index__main--bloqueTexto1 {
         padding:  80px 50px 50px 50px;
     }
+
     .index__main--bloqueTexto5 {
         width: 85%;
-    }
-    .index__main--equipo p {
-        padding: 4px 80px 4px 80px;
-    }
-    .index__main--areaContacto {
-        padding: 20px 150px 0px 150px;
     }
     .index__main--areasTrabajo2 a {
         width: 50%;
@@ -632,10 +641,85 @@ input[type='radio']:checked:after {
     .index__main--areasTrabajo2 > div > a > div {
         margin: 50px 0px 0px 0px;
     }
+
+    .index__main--equipo p {
+        padding: 4px 80px 4px 80px;
+    }
     .index__main--equipo img {
         width: 40%;
     }
+
+    .index__main--areaContacto {
+        padding: 20px 150px 0px 150px;
     }
+
+    }
+
+@media only screen and (min-width: 991px) {
+    .index__main--bloqueTexto1 {
+        padding:  80px 50px 50px 50px;
+    }
+    .index__main--bloqueTexto5 {
+        width: 75%;
+    }
+    .index__main--areasTrabajo2 {
+        margin-bottom: 60px;
+    }
+    .index__main--areasTrabajo2 a {
+        width: 33.33%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .index__main--areasTrabajo2 div {
+        width: 80%;
+    }
+    .index__main--areasTrabajo2 > div > a > div {
+        margin: 50px 0px 0px 0px;
+    }
+    .index__main--imgAbogada {
+        height: 500px;
+    }
+
+    .index__main--equipo p {
+        padding: 4px 80px 4px 80px;
+    }
+    .index__main--areaContacto {
+        padding: 20px 150px 0px 150px;
+    }
+    .index__main--equipo img {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .index__main--equipo p {
+        padding: 4px 40px 4px 40px;
+    }
+    .index__main--areaContacto {
+        padding: 20px 200px 0px 200px;
+    }
+    .index__main--imgAbogada {
+        height: 600px;
+    }
+}
+
+
+@media only screen and (min-width: 1400px) {
+    .index__main--areasTrabajo2 a {
+        width: 16.6%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .index__main--areasTrabajo2 div {
+        width: 90%;
+    }
+    .index__main--areaContacto {
+        padding: 20px 250px 0px 250px;
+    }
+    .index__main--imgAbogada {
+        height: 650px;
+    }
+}
 
 /* ============================= */
     /* Estilos para footer */
@@ -741,7 +825,31 @@ input[type='radio']:checked:after {
         padding: 15px 20px;
     }
     .footer__bloque--seccion1 p {
-        padding-right: 80px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 991px)  {
+    .footer__bloque--seccion1 p {
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 1200px)  {
+    .footer__bloque--seccion1 p {
+        padding-right: 50px;
+    }
+}
+
+@media (min-width: 1400px)  {
+    .footer__bloque--seccion1 p {
+        padding-right: 100px;
+    }
+}
+
+@media (min-width: 1600px)  {
+    .footer__bloque--seccion1 p {
+        padding-right: 140px;
     }
 }
 
@@ -753,7 +861,7 @@ input[type='radio']:checked:after {
     background-image: url(../assets/images/portadaspages/conozcanosbn.jpg);
     background-position: center;
     height: 240px;
-    max-width: 1400px;
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -949,6 +1057,30 @@ input[type='radio']:checked:after {
     }
 }
 
+@media (min-width: 991px) {
+    .contacto__main--bloqueTexto22 {
+        background-image: url(../assets/images/portadaspages/contacto2bnsquare.jpg);
+        align-items: center;
+        background-position: center;
+        text-align: center;
+        background-size: cover;
+    }
+    .contacto__main--bloqueTexto2 {
+        background-image: none;
+        padding: 100px;
+    }
+    .contacto__main--contenedor1 {
+        margin: 10px 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contacto__main--bloqueTexto3 {
+        padding: 40px 150px;
+    }
+}
+
+
 /* ============================= */
 /* Estilos para Servicios */
 /* ============================= */
@@ -965,11 +1097,11 @@ input[type='radio']:checked:after {
     padding: 5px;
 }
 
-.servicios__main img:nth-last-child(4) {
+.servicios__main--imgPortada {
     width: 85%;
     margin: auto;
 }
-.servicios__main img:nth-last-child(6) {
+.servicios__main--imgContent {
     width: 85%;
     margin: auto;
 }
@@ -1023,8 +1155,9 @@ input[type='radio']:checked:after {
 }
 
 .accordion-item {
-    border-color: #ffffff;
+    border-color: rgb(250, 250, 250);
     padding: 0px;
+    background-color: rgb(250, 250, 250)
 }
 
 .accordion-button {
@@ -1032,6 +1165,7 @@ input[type='radio']:checked:after {
     font-family: 'Nunito', sans-serif;
     font-weight: 300;
     padding: 20px 0px;
+    background-color: rgb(250, 250, 250)
 }
 
 .accordion-button:focus {
@@ -1039,7 +1173,7 @@ input[type='radio']:checked:after {
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #ffffff;
+    background-color: rgb(250, 250, 250);
     color: #588dca;
 }
 
@@ -1090,7 +1224,70 @@ input[type='radio']:checked:after {
     .servicios__main--bloqueTexto3 {
         padding: 0px 10px;
     }
+}
 
+@media (min-width: 768px) and (max-width: 991px)  {
+    .servicios__main--bloqueTexto1 {
+        padding: 0px 40px;
+        padding-bottom: 10px;
+    }
+    .servicios__main--bloqueTexto2 {
+        padding: 0px 40px;
+        padding-bottom: 30px;
+    }
+    .servicios__main--acordeon {
+        padding: 0px 40px 30px 40px;
+    }
+    .servicios__main--bloqueTexto3 {
+        padding: 0px 40px;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1200px)  {
+    .servicios__main--bloqueTexto1 {
+        padding: 0px 80px;
+        padding-bottom: 10px;
+    }
+    .servicios__main--bloqueTexto2 {
+        padding: 0px 80px;
+        padding-bottom: 30px;
+    }
+    .servicios__main--acordeon {
+        padding: 0px 80px 30px 80px;
+    }
+    .servicios__main--bloqueTexto3 {
+        padding: 0px 80px;
+    }
+    .servicios__main--imgPortada {
+        width: 75%;
+        max-height: 450px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .servicios__main--imgPortada {
+        width: 75%;
+        max-height: 475px;
+    }
+    .accordion-button {
+        justify-content: center;
+    }
+    .accordion-button::after {
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .servicios__main--imgPortada {
+        width: 70%;
+        max-height: 500px;
+    }
+}
+@media (min-width: 1600px) {
+    .servicios__main--imgPortada {
+        width: 70%;
+        max-height: 525px;
+    }
 }
 
 /* ============================= */
@@ -1151,6 +1348,18 @@ input[type='radio']:checked:after {
 @media (min-width: 768px) and (max-width: 991px)  {
     .pag404__main--bloqueTexto {
         padding: 0px 150px;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1200px)  {
+    .pag404__main--bloqueTexto {
+        padding: 0px 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pag404__main--bloqueTexto {
+        padding: 0px 300px;
     }
 }
 

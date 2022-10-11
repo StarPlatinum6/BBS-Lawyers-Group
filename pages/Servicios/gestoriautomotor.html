@@ -19,9 +19,11 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> <!-- Llamada a Bootstrap por CDN -->
     <header>
-        <nav class="navbar navbar-expand-md navbar justify-content-center index__header--barraNav" id="arriba"> <!-- Seccion de barra de navegación superior -->
+        <nav class="navbar navbar-expand-md justify-content-center index__header--barraNav" id="arriba"> <!-- Seccion de barra de navegación superior -->
             <div class="container-fluid justify-content-evenly">
-                <a href="../../index.html"><img class="logo col-9" src="../../assets/images/logo.png" alt="logo"></a>
+                <div class="index__main--divLogo col-md-5 col-xl-4">
+                    <a href="../../index.html"><img class="index__header--logo col-9" src="../../assets/images/logo.png" alt="logo"></a>
+                </div>
                 <button class="navbar-toggler first-button" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <div class="animated-icon1"><span></span><span></span><span></span></div>
                 </button>
@@ -57,76 +59,78 @@
     </header>
     <main>
         <div class="container-fluid servicios__main">
-            <img src="../../assets/images/Servicios/gestoriautomotor1.jpg" alt="Gestoria Automotor" class="d-block">
+            <img src="../../assets/images/Servicios/gestoriautomotor1.jpg" alt="Gestoria Automotor" class="d-block servicios__main--imgPortada">
             <div class="servicios__main--bloqueTexto1"> <!-- Titulo e info principal -->
                 <h2 class="servicios__main--titular"><div class="index__main--linea1"><hr></div>Gestoría Automotor<div class="index__main--linea1"><hr></div></h2>
-                <p>Nuestro estudio brinda servicios de gestoria automotor. Contactese con nuestro equipo de gestores. Se realizan todo tipo de tramites, automor, rentas. AFIP, bancos.</p>
             </div>
-            <div class="servicios__main--bloqueTexto2">
-                <img src="../../assets/images/Servicios/gestoriautomotor2.jpg" alt="Gestoria Automotor" class="">
-                <p>El compromiso hacia nuestros clientes, nuestros abogados y profesionales nos empuja a operar en forma expedita, efectiva y eficiente. Nuestra visión consiste en llegar a ello a través de un intenso enfoque en los valores y principios, destacando principalmente el servicio al cliente. El cumplimiento de éste es lo que nos ha llevado a la convicción de que en el futuro constituirá una institución legal única.</p>
-            </div>
-            <div class="accordion servicios__main--acordeon" id="accordionPanelsStayOpenExample">
-                <div class="accordion-item"> <!-- Acordeon con info adicional -->
-                    <h3 class="accordion-header" id="panelsStayOpen-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                            Primer Info
-                        </button>
-                    </h3>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-                        <div class="accordion-body">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum eos nisi assumenda dolor officiis laboriosam reiciendis repellendus ad maiores officia odit at sint beatae tempora, perspiciatis libero quibusdam provident soluta distinctio! Id assumenda placeat ipsum expedita vel ullam molestias? At quaerat error rem similique aut repudiandae deleniti quasi sunt! Architecto ducimus voluptatem cupiditate impedit quasi non modi doloribus ex iste.</p>
+            <div class="row">
+                <div class="servicios__main--bloqueTexto2 col-12 col-xl-6">
+                    <p>Nuestro estudio brinda servicios de gestoria automotor. Contactese con nuestro equipo de gestores. Se realizan todo tipo de tramites, automor, rentas. AFIP, bancos.</p>
+                    <img src="../../assets/images/Servicios/gestoriautomotor2.jpg" alt="Gestoria Automotor" class="servicios__main--imgContent">
+                    <p>El compromiso hacia nuestros clientes, nuestros abogados y profesionales nos empuja a operar en forma expedita, efectiva y eficiente. Nuestra visión consiste en llegar a ello a través de un intenso enfoque en los valores y principios, destacando principalmente el servicio al cliente. El cumplimiento de éste es lo que nos ha llevado a la convicción de que en el futuro constituirá una institución legal única.</p>
+                </div>
+                <div class="accordion servicios__main--acordeon col-12 col-xl-6" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item"> <!-- Acordeon con info adicional -->
+                        <h3 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                Primer Info
+                            </button>
+                        </h3>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum eos nisi assumenda dolor officiis laboriosam reiciendis repellendus ad maiores officia odit at sint beatae tempora, perspiciatis libero quibusdam provident soluta distinctio! Id assumenda placeat ipsum expedita vel ullam molestias? At quaerat error rem similique aut repudiandae deleniti quasi sunt! Architecto ducimus voluptatem cupiditate impedit quasi non modi doloribus ex iste.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                Segunda Info
+                            </button>
+                        </h3>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatibus nobis magnam. Repudiandae labore perspiciatis pariatur, quo aut ipsam aperiam. Fugiat, sunt quibusdam nostrum velit architecto impedit id veniam ipsam eveniet, repellendus quisquam aspernatur consequuntur aperiam eligendi recusandae quae inventore reiciendis perferendis libero rem. Minima ea quibusdam vel, sapiente, ullam aperiam provident, perspiciatis rerum dignissimos odio unde natus quae esse.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Tercer Info
+                            </button>
+                        </h3>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus alias fugit, autem culpa fugiat dolore sit ex expedita ratione doloremque! Totam laboriosam excepturi ea libero assumenda, blanditiis voluptatem nesciunt adipisci eaque quasi voluptas exercitationem nemo corporis ipsa qui? Molestiae quibusdam maxime explicabo at rem in magnam sequi hic cumque, laudantium eum quisquam ea? Corrupti voluptatum molestiae repellat provident, numquam officia.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h3 class="accordion-header" id="panelsStayOpen-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                            Segunda Info
-                        </button>
-                    </h3>
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                        <div class="accordion-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatibus nobis magnam. Repudiandae labore perspiciatis pariatur, quo aut ipsam aperiam. Fugiat, sunt quibusdam nostrum velit architecto impedit id veniam ipsam eveniet, repellendus quisquam aspernatur consequuntur aperiam eligendi recusandae quae inventore reiciendis perferendis libero rem. Minima ea quibusdam vel, sapiente, ullam aperiam provident, perspiciatis rerum dignissimos odio unde natus quae esse.</p>
-                        </div>
-                    </div>
+                <div class="index__main--linea1"><hr></div>
+                <div class="servicios__main--bloqueTexto3"> <!-- Lista con info adicional -->
+                    <h4>Servicios ofrecidos</h4>
+                    <ul>
+                        <li>Inscripción inicial de vehículos 0 km.</li>
+                        <li>Inscripción inicial de automotores para personas con capacidades diferentes.</li>
+                        <li>Transferencias en todo el país y de todo tipo.</li>
+                        <li>Cambio de Radicación y Domicilio.</li>
+                        <li>Certificado de Dominio.</li>
+                        <li>Libre Deuda.</li>
+                        <li>Altas y Bajas de Carrocería.</li>
+                        <li>Cambio de tipo de Carrocería.</li>
+                        <li>Denuncia de Venta.</li>
+                        <li>Denuncia de Compra.</li>
+                        <li>Cancelación de contrato de Prenda.</li>
+                        <li>Seguros.</li>
+                        <li>Inscripción de prenda.</li>
+                        <li>Alta y baja de patente en CABA y Pcia. Bs As.</li>
+                        <li>Formulario CETA con o sin clave.</li>
+                        <li>Duplicado de cédulas, cédulas adicionales.</li>
+                        <li>Títulos.</li>
+                        <li>Trámites en Rentas y AFIP.</li>
+                    </ul>
                 </div>
-                <div class="accordion-item">
-                    <h3 class="accordion-header" id="panelsStayOpen-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                        Tercer Info
-                        </button>
-                    </h3>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                        <div class="accordion-body">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus alias fugit, autem culpa fugiat dolore sit ex expedita ratione doloremque! Totam laboriosam excepturi ea libero assumenda, blanditiis voluptatem nesciunt adipisci eaque quasi voluptas exercitationem nemo corporis ipsa qui? Molestiae quibusdam maxime explicabo at rem in magnam sequi hic cumque, laudantium eum quisquam ea? Corrupti voluptatum molestiae repellat provident, numquam officia.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="index__main--linea1"><hr></div>
-            <div class="servicios__main--bloqueTexto3"> <!-- Lista con info adicional -->
-                <h4>Servicios ofrecidos</h4>
-                <ul>
-                    <li>Inscripción inicial de vehículos 0 km.</li>
-                    <li>Inscripción inicial de automotores para personas con capacidades diferentes.</li>
-                    <li>Transferencias en todo el país y de todo tipo.</li>
-                    <li>Cambio de Radicación y Domicilio.</li>
-                    <li>Certificado de Dominio.</li>
-                    <li>Libre Deuda.</li>
-                    <li>Altas y Bajas de Carrocería.</li>
-                    <li>Cambio de tipo de Carrocería.</li>
-                    <li>Denuncia de Venta.</li>
-                    <li>Denuncia de Compra.</li>
-                    <li>Cancelación de contrato de Prenda.</li>
-                    <li>Seguros.</li>
-                    <li>Inscripción de prenda.</li>
-                    <li>Alta y baja de patente en CABA y Pcia. Bs As.</li>
-                    <li>Formulario CETA con o sin clave.</li>
-                    <li>Duplicado de cédulas, cédulas adicionales.</li>
-                    <li>Títulos.</li>
-                    <li>Trámites en Rentas y AFIP.</li>
-                </ul>
             </div>
         </div>
     </main>

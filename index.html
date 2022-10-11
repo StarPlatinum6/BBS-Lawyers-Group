@@ -19,9 +19,11 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> <!-- Llamada a Bootstrap por CDN -->
     <header>
-        <nav class="navbar navbar-expand-md navbar justify-content-center index__header--barraNav" id="arriba"> <!-- Seccion de barra de navegación superior -->
+        <nav class="navbar navbar-expand-md justify-content-center index__header--barraNav" id="arriba"> <!-- Seccion de barra de navegación superior -->
             <div class="container-fluid justify-content-evenly">
-                <a href="./index.html"><img class="logo col-9" src="./assets/images/logo.png" alt="logo"></a>
+                <div class="index__main--divLogo col-md-5 col-xl-4">
+                    <a href="./index.html"><img class="index__header--logo col-9" src="./assets/images/logo.png" alt="logo"></a>
+                </div>
                 <button class="navbar-toggler first-button" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <div class="animated-icon1"><span></span><span></span><span></span></div>
                 </button>
@@ -104,56 +106,61 @@
             </div>
         </section>
         <section>
-            <div class="index__main--imgAbogada"></div> <!-- Sección de características del negocio -->          
+            <div class="index__main--imgAbogada"></div>
+            <!-- Sección de características del negocio -->          
             <div class="index__main--bloqueTextoImg">
                 <section class="index__main--bloqueTexto3">
                     <div>
                         <h2 class="text-center">Claves del éxito de nuestra firma</h2>
                     </div>
                     <div class="container-fluid">
-                        <div class="row">
-                            <div class="row animate__animated animate__fadeInUp animate__slow wow col-md-6">
+                        <div class="row justify-content-evenly">
+                            <div class="row animate__animated animate__fadeInUp animate__slow wow col-md-6 col-lg-4 col-xxl-2">
                                 <i class="bi bi-award col-2 text-center"></i>
                                 <div class="col-10">
                                     <h4>Diversidad de recursos, experiencia y profesionales</h4>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti reprehenderit eum accusamus non.</p>
                                 </div>
                             </div>
-                            <div class="row animate__animated animate__fadeInUp animate__slow wow col-md-6">
+                            <div class="row animate__animated animate__fadeInUp animate__slow wow col-md-6 col-lg-4 col-xxl-2">
                                 <i class="bi bi-fast-forward col-2 text-center"></i>
                                 <div class="col-10">
                                     <h4>Destreza jurídica</h4>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti reprehenderit eum accusamus non.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="row animate__animated animate__fadeInUp animate__slow wow col-md-6">
+                            <div class="row animate__animated animate__fadeInUp animate__slow wow col-md-6 col-lg-4 col-xxl-2">
                                 <i class="bi bi-file-person col-2 text-center"></i>
                                 <div class="col-10">
                                     <h4>Enfoque al cliente</h4>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti reprehenderit eum accusamus non.</p>
                                 </div>
                             </div>
-                            <div class="row animate__animated animate__fadeInUp animate__slow wow col-md-6">
+                            <div class="row animate__animated animate__fadeInUp animate__slow wow col-md-6 col-lg-4 col-xxl-2">
                                 <i class="bi bi-people col-2 text-center"></i>
                                 <div class="col-10">
                                     <h4>Orientación al trabajo en equipo</h4>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti reprehenderit eum accusamus non.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="row animate__animated animate__fadeInUp animate__slow wow col-md-9">
+                            <div class="row animate__animated animate__fadeInUp animate__slow wow col-md-6 col-lg-4 col-xxl-2">
                                 <i class="bi bi-house-heart col-2 text-center"></i>
                                 <div class="col-10">
                                     <h4>Organización que opera como una única firma</h4>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti reprehenderit eum accusamus non.</p>
                                 </div>
                             </div>
+                            <div class="row animate__animated animate__fadeInUp animate__slow wow col-md-6 col-lg-4 col-xxl-2">
+                                <i class="bi bi-clock-history col-2 text-center"></i>
+                                <div class="col-10">
+                                    <h4>10 años de experiencia</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti reprehenderit eum accusamus non.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
+                
             </div>
         </section>
         <section>
@@ -178,16 +185,12 @@
                 <a href="./pages/Servicios/civilcomercial.html"><div class="index__main--area2 row align-items-center shadow animate__animated animate__fadeInRight wow">
                     <p>Civil y Comercial</p>
                 </div></a>
-            </div>
-            <div class="row">
                 <a href="./pages/Servicios/laboral.html"><div class="index__main--area3 row align-items-center shadow animate__animated animate__fadeInLeft wow">
                     <p>Laboral</p>
                 </div></a>
                 <a href="./pages/Servicios/penal.html"><div class="index__main--area4 row align-items-center shadow animate__animated animate__fadeInRight wow">
                     <p>Penal</p>
                 </div></a>
-            </div>
-            <div class="row">
                 <a href="./pages/Servicios/accidentes.html"><div class="index__main--area5 row align-items-center shadow animate__animated animate__fadeInLeft wow">
                     <p>Accidentes de Auto</p>
                 </div></a>
@@ -200,8 +203,8 @@
             <h2>Conocé a nuestro equipo</h2>
             <div class="index__main--linea1"><hr></div>
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6">
+                <div class="row justify-content-evenly">
+                    <div class="col-md-6 col-xl-4">
                         <img src="./assets/images/jesi2.jpg" alt="Jesica Brusco" class="shadow animate__animated animate__fadeInLeft wow">
                         <h4>Dra. Brusco Jesica</h4>
                         <i class="lead">Abogada en derecho Civil</i>
@@ -209,17 +212,15 @@
                         <span><a href="./pages/conozcanos.html#jessica">LEER PERFIL COMPLETO</a> • <a href="https://www.linkedin.com/in/jesica-brusco-1379a573/" target="_blank">PERFIL DE LINKEDIN</a></span>
                         <div class="index__main--linea1"><hr></div>
                     </div>
-                    <div class="col-md-6">
-                        <img src="./assets/images/nati2.jpg" alt="Natalia Simonetta" class="shadow animate__animated animate__fadeInRight wow">
+                    <div class="col-md-6 col-xl-4">
+                        <img src="./assets/images/nati2.jpg" alt="Natalia Simonetta" class="shadow animate__animated animate__fadeInLeft wow">
                         <h4>Dra. Simonetta Natalia</h4>
                         <i class="lead">Abogada en derecho Civil y Familia</i>
                         <p>Se recibió en el 2013, con 25 años, en el Instituto Universitario de la Policía Federal Argentina. En el año 2014 comenzó de forma independiente a ejercer la profesión.</p>
                         <span><a href="./pages/conozcanos.html#natalia">LEER PERFIL COMPLETO</a> • <a href="https://www.linkedin.com/in/natalia-simonetta-a67a3966/" target="_blank">PERFIL DE LINKEDIN</a></span>
                         <div class="index__main--linea1"><hr></div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-xl-4">
                         <img src="./assets/images/pablo1.jpg" alt="Pablo Martinic" class="shadow animate__animated animate__fadeInLeft wow" id="pablo">
                         <h4>Dr. Pablo Martinic</h4>
                         <i class="lead">Abogado en derecho Penal</i>
@@ -227,22 +228,21 @@
                         <span><a href="./pages/conozcanos.html#pablo">LEER PERFIL COMPLETO</a> • <a href="https://www.linkedin.com/in/pablo-martinic-0193364a/" target="_blank">PERFIL DE LINKEDIN</a></span>
                         <div class="index__main--linea1"><hr></div>
                     </div>
-                    <div class="col-md-6">
-                        <img src="./assets/images/maxi1.jpg" alt="Maximiliano Mazzaccaro" class="shadow animate__animated animate__fadeInRight wow" id="maxi">
+                    <div class="col-md-6 col-xl-4">
+                        <img src="./assets/images/maxi1.jpg" alt="Maximiliano Mazzaccaro" class="shadow animate__animated animate__fadeInLeft wow" id="maxi">
                         <h4>Dr. Maximiliano Mazzaccaro</h4>
                         <i class="lead">Abogado especialista en Siniestros</i>
                         <p>Recibido en la universidad de Moron, matriculado en el colegio publico de abogados de capital federal, con 12 años de experiencia en el rubro seguros, en los que se desempeñó tanto en compañías como en forma particular.</p>
                         <span><a href="./pages/conozcanos.html#maxi">LEER PERFIL COMPLETO</a> • <a href="https://www.linkedin.com/in/pablo-martinic-0193364a/" target="_blank">PERFIL DE LINKEDIN</a></span>
                         <div class="index__main--linea1"><hr></div>
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-xl-4">
                         <img src="./assets/images/lourdes2.jpg" alt="Lourdes Ledesma" class="shadow animate__animated animate__fadeInLeft wow">
                         <h4>Dra. Ledesma Lourdes</h4>
                         <i class="lead">Abogada en derecho Laboral</i>
                         <p>Se egresó de la Universidad Nacional de La Matanza a los 24 años. Se encuentra matriculada en el Colegio de Abogados de Morón y Colegio de Abogados de Capital Federal.</p>
                         <span><a href="./pages/conozcanos.html#lourdes">LEER PERFIL COMPLETO</a> • <a href="https://www.linkedin.com/in/lourdes-micaela-ledesma-5650a2149/" target="_blank">PERFIL DE LINKEDIN</a></span>
+                        <div class="index__main--linea1"><hr></div>
                     </div>
                 </div>
             </div>
@@ -330,7 +330,7 @@
         </div>
     </footer>
     <script src="./js/wow.min.js"></script>
-    <script>new WOW().init();</script>``
+    <script>new WOW().init();</script>
     <script src="./js/main.js"></script>
 </body>
 </html>
