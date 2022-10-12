@@ -1,15 +1,3 @@
-/* font-family: 'Lato', sans-serif; 
-font-family: 'Montserrat', sans-serif; textos parrafos
-font-family: 'Nunito', sans-serif; titulos
-font-family: 'Roboto Condensed', sans-serif;
-font-family: 'Libre Baskerville', serif;
-*/
-
-/* .balanza {
-    width: 50px;
-    height: 50px;
-} */
-
 * {
     margin: 0;
     padding: 0;
@@ -1537,11 +1525,3 @@ input[type='radio']:checked:after {
     letter-spacing: 3px;
     font-weight: 300;
 }
-
-/*
-font-family: 'Lato', sans-serif; 
-font-family: 'Montserrat', sans-serif; textos parrafos
-font-family: 'Nunito', sans-serif; titulos
-font-family: 'Roboto Condensed', sans-serif;
-font-family: 'Libre Baskerville', serif;
-*/
