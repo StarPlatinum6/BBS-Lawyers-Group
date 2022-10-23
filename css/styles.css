@@ -1525,3 +1525,338 @@ input[type='radio']:checked:after {
     letter-spacing: 3px;
     font-weight: 300;
 }
+
+
+/* ============================= */
+/* Estilos para portal de Login */
+/* ============================= */
+
+.login__main {
+    padding: 50px 75px;
+}
+
+.login__main--titular {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: .9px;
+}
+
+.login__main hr {
+    width: 50%;
+    color: #4974a5;
+    border-width: 2px;
+    opacity: 100;
+}
+
+.login__main input {
+    padding: 5px;
+    border-radius: 5%;
+    background-color: #a2aebb;
+    border: #4974a5;
+    max-width: 220px;
+    font-size: 1.2rem;
+    color: #e3f2fd;
+    margin-top: 15px;
+    text-align: center;
+    outline-color: #4974a5;
+}
+
+.login__main button {
+    padding: 5px;
+    border-radius: 8%;
+    background-color: #4974a5;
+    border: #4974a5;
+    width: 50%;
+    max-width: 120px;
+    font-size: 1.2rem;
+    color: #e3f2fd;
+    margin-top: 25px;
+}
+
+.login__main--errorLogin, .login__main--errorLoginAb {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .6px;
+    transition: all 1s ease;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 400;
+    margin-top: 30px;
+    max-width: 450px;
+}
+
+/* ============================= */
+/* Estilos para portal de Registro */
+/* ============================= */
+
+.registro__main {
+    padding: 50px 75px;
+}
+
+.registro__main--titular {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: .9px;
+    margin-top: 20px;
+}
+
+.registro__main hr {
+    width: 50%;
+    color: #4974a5;
+    border-width: 2px;
+    opacity: 100;
+}
+
+.registro__main--formulario label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: .9px;
+    text-align: center;
+}
+
+.registro__main input {
+    padding: 5px;
+    border-radius: 5%;
+    background-color: #a2aebb;
+    border: 3px solid #4974a5;
+    max-width: 220px;
+    font-size: 1.2rem;
+    color: #e3f2fd;
+    text-align: center;
+    outline-color: #4974a5;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: .9px;
+}
+
+.registro__main--boton {
+    padding: 5px;
+    border-radius: 8%;
+    background-color: #4974a5;
+    border: #4974a5;
+    max-width: 150px;
+    font-size: 1.2rem;
+    color: #e3f2fd;
+    margin-bottom: 30px;
+}
+
+.registro__main--resultado {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .6px;
+    transition: all 1s ease;
+    text-align: center;
+}
+
+.control__ingreso {
+    margin-top: 10px
+}
+
+.control__ingreso.correcto input, .control__ingreso.correcto select {
+    border-color: #0ab96d;
+    transition: all 1s ease;
+}
+
+.control__ingreso.incorrecto input, .control__ingreso.incorrecto select  {
+    border-color: #ff3860;
+    transition: all 1s ease;
+}
+
+.control__ingreso .incorrecto {
+    color: #ff3860;
+    font-size: .8rem;
+    height: 15px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+/* ============================= */
+/* Estilos para Panel de Control */
+/* ============================= */
+
+.invisible {
+    display: none;
+    position: absolute;
+}
+
+.cp__main {
+    padding: 50px 75px;
+}
+
+.cp__main--datos {
+    align-items: center;
+}
+
+.cp__main--boton, .cp__main--botonAB {
+    padding: 5px;
+    border-radius: 8%;
+    background-color: #4974a5;
+    border: #4974a5;
+    max-width: 150px;
+    min-width: 150px;
+    font-size: 1.2rem;
+    color: #e3f2fd;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.cp__main--botonAB {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.cp__main--botonSecondary {
+    padding: 5px;
+    border-radius: 8%;
+    background-color: #707780;
+    border: #707780;
+    max-width: 70px;
+    min-width: 70px;
+    font-size: 1.2rem;
+    color: #f9fdff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.cp__main--boton:hover, .cp__main--botonAB:hover, .cp__main--botonSecondary:hover {
+    background-color: #588dca;
+    border: #588dca;
+    transition: all .5s ease;
+}
+
+.cp__main--opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cp__clienteDatos--datos, #cp__clienteTurnos--datos, #cp__cancelarTurno--datos, #cp__turnos--todos, #cp__turnos--rama {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: .9px;
+    margin-top: 20px;
+}
+
+#cp__clienteDatos--informe,#cp__clienteTurnos--tabla, #cp__turnos--tabla {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: .9px;
+}
+
+#cp__clienteTurnos--informe, #cp__clienteDatos--informe, #cp__turnos--tablaDiv, #cp__clienteTurnos--tablaDiv {
+    position: absolute;
+    left: 50px;
+    top: 950px;
+    width: 90%;
+    height: 22%;
+}
+
+.cp__spacer, .cpAB__spacer {
+    width: 100%;
+    height: 270px;
+    position: relative;
+    z-index: -9999;
+}
+
+.cpAB__spacer {
+    height: 350px;
+}
+
+.cp__cancelarTurno--entrada {
+    width: 50%;
+}
+
+.cp__main--bienvenida {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    letter-spacing: .9px;
+}
+
+/* ============================= */
+/* Medias para Panel de Control */
+/* ============================= */
+
+@media (max-width: 577px) {
+
+    .cp__main {
+        padding: 50px 50px;
+    }
+
+    #cp__clienteTurnos--informe, #cp__clienteDatos--informe, #cp__turnos--tablaDiv, #cp__clienteTurnos--tablaDiv {
+        left: 20px;
+        top: 910px;
+    }
+
+    .cp__main--bienvenida, #cp__clienteTurnos--datos p, #cp__clienteDatos--datos p, #cp__cancelarTurno--datos p, #cp__turnos--rama p, #cp__turnos--todos p {
+        font-size: 1rem;
+    }
+
+    #cp__clienteTurnos--tabla, #cp__clienteDatos--tabla, #cp__clienteDatos--informeTabla, #cp__turnos--tabla {
+        font-size: 0.9rem;
+    }
+
+    #cp__cancelarTurno--informe {
+        margin-top: 50px;
+    }
+    #cp__cancelarTurno--datos{
+        margin-top: 50px;
+    }
+
+    .cp__main--boton {
+        margin-top: 35px;
+    }
+    .cp__main--botonAB {
+        margin-top: 10px;
+    }
+
+    .cp__main--datos {
+        position: absolute;
+        left: 10px;
+        top: 830px;
+    }
+
+}
+
+@media (min-width: 578px) and (max-width: 768px) {
+    #cp__clienteTurnos--informe, #cp__clienteDatos--informe, #cp__turnos--tablaDiv, #cp__clienteTurnos--tablaDiv {
+        left: 30px;
+        top: 910px;
+    }
+    #cp__cancelarTurno--informe {
+        margin-top: 50px;
+    }
+    #cp__cancelarTurno--datos{
+        margin-top: 50px;
+    }
+    .cp__spacer, .cpAB__spacer {
+        height: 450px;
+    }
+    .cp__main--boton {
+        margin-bottom: 10px;
+    }
+    .cp__main--botonAB {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    .cp__main--datos {
+        position: absolute;
+        left: 10px;
+        top: 830px;
+    }
+    .control__ingreso .incorrecto {
+        margin-bottom: 5px;
+    }
+    .control__ingreso .incorrecto {
+        margin-bottom: 5px;
+    }
+    .cp__main--formularioTurnos {
+        margin-left: 25px;
+    }
+    .cp__main {
+        padding: 50px 30px;
+    }
+}

@@ -48,7 +48,13 @@
                                 <li><a class="dropdown-item" href="./pages/TemasInteres/contratoslocacion.html">Contratos de Locacion</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item col-4"><a class="nav-link" href="./pages/clientes.html">Nuestros Clientes</a></li>
+                        <li class="nav-item dropdown col-4"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Clientes</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pages/Portales/login.html">Acceso Clientes</a></li>
+                                <li><a class="dropdown-item" href="./pages/Portales/loginAbogados.html">Acceso Abogados</a></li>
+                                <li><a class="dropdown-item" href="./pages/clientes.html">Testimonios</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -250,35 +256,35 @@
         <section class="index__main--areaContacto"> <!-- Sección formulario de contacto -->
             <h2>¡No dudes en consultar!</h2>
             <p>Lo legal puede ser un asunto complicado de entender y manejar.<br><br>¡Dejanos ayudarte a solucionar tus temas legales!</p>            
-            <form action="" class="col-9">
+            <form action="" class="col-9" id="formularioContacto">
                 <div class="form-group">
                     <div>
-                        <input class="form-control" type="text" name="nombre" id="" placeholder="Nombre" required>
+                        <input class="form-control" type="text" name="nombre" id="formularioContacto__nombre" placeholder="Nombre" required>
                     </div>
                     <div>
-                        <input class="form-control" type="text" name="apellido" id="" placeholder="Apellido" required>
+                        <input class="form-control" type="text" name="apellido" id="formularioContacto__apellido" placeholder="Apellido" required>
                     </div>
                     <div>
-                        <input class="form-control" type="text" name="mail" id="" placeholder="Dirección de e-mail" required>
+                        <input class="form-control" type="text" name="mail" id="formularioContacto__mail" placeholder="Dirección de e-mail" required>
                     </div>
                     <div>
-                        <input class="form-control" type="number" name="telefono" id="" placeholder="Número telefónico" required>
+                        <input class="form-control" type="number" name="telefono" id="formularioContacto__telefono" placeholder="Número telefónico" required>
                     </div>
                     <div class="index__main--areaFormulario">
                         <div>
-                            <label class="form-label" for="sexo">Sexo:&nbsp;</label>&nbsp;
-                            <input type="radio" name="sexo" value="hombre">&nbsp;&nbsp;Hombre&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="sexo" value="mujer">&nbsp;&nbsp;Mujer&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="sexo" value="nodice">&nbsp;&nbsp;N/C
+                            <label class="form-label" for="sexo" id="formularioContacto__genero">Sexo:&nbsp;</label>&nbsp;
+                            <input type="radio" name="sexo" value="Hombre" id="formularioContacto__genero">&nbsp;&nbsp;Hombre&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="sexo" value="Mujer" id="formularioContacto__genero">&nbsp;&nbsp;Mujer&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="sexo" value="Otro" id="formularioContacto__genero">&nbsp;&nbsp;Otro
                         </div>
                         <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" name="news" value="yes" checked>
-                            <label class="form-check-label" for="mySwitch"></label>
+                            <input class="form-check-input" type="checkbox" name="news" value="yes" id="formularioContacto__noticias" checked>
+                            <label class="form-check-label" for="formularioContacto__noticias"></label>
                             Recibir novedades por e-mail
                         </div>
                     </div>
                     <div>
-                        <textarea class="form-control" rows="2" id="comment" name="text" placeholder="Dejanos tu consulta"></textarea>
+                        <textarea id="formularioContacto__consulta" class="form-control" rows="2" id="comment" name="text" placeholder="Dejanos tu consulta" required></textarea>
                     </div>
                     <div>
                         <button type="submit" class="btn btn-primary index__main--botonFormulario">ENVIAR</button>
@@ -332,7 +338,8 @@
     <script src="./js/wow.min.js"></script>
     <script>new WOW().init();</script>
     <script src="./js/main.js"></script>
-    <script src="./js/ProyectoFinal2.js"></script>
+    <script src="./js/contactForm.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
 
