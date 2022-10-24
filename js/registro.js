@@ -154,7 +154,7 @@ const validarIngresos = () => {
     if(generoValor === '') {
         estadoIncorrecto(genero, 'El genero es obligatorio');
         val7 = false;
-    } else if ((generoValor != "Masculino") && (generoValor != "Femenino")) {
+    } else if (((generoValor.charAt(0).toUpperCase() + generoValor.slice(1).toLowerCase()) != "Masculino") && ((generoValor.charAt(0).toUpperCase() + generoValor.slice(1).toLowerCase()) != "Femenino")) {
         estadoIncorrecto(genero, 'Ingrese Femenino o Masculino');
         val7 = false;
     } else {
