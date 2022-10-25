@@ -1807,7 +1807,7 @@ input[type='radio']:checked:after {
     }
 
     .cp__main--boton {
-        margin-top: 35px;
+        margin-top: 20px;
     }
     .cp__main--botonAB {
         margin-top: 10px;
@@ -1817,6 +1817,13 @@ input[type='radio']:checked:after {
         position: absolute;
         left: 10px;
         top: 830px;
+    }
+    .control__ingreso .incorrecto {
+        margin-bottom: 5px;
+    }
+
+    .cp__spacer, .cpAB__spacer {
+        height: 400px;
     }
 
 }
@@ -1846,9 +1853,6 @@ input[type='radio']:checked:after {
         position: absolute;
         left: 10px;
         top: 830px;
-    }
-    .control__ingreso .incorrecto {
-        margin-bottom: 5px;
     }
     .control__ingreso .incorrecto {
         margin-bottom: 5px;
