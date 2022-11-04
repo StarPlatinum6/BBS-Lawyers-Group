@@ -86,6 +86,8 @@ const estadoCorrecto = el => {
 
 /* ======================================================== */
 
+// Fn para btn "Ver Turnos"
+
 const mostrarTurnos = () => {
     if ((clienteTurnos.classList[1] == 'invisible') || (clienteTurnos.classList[0] == 'invisible') || (clienteTurnos.classList[2] == 'invisible') || (clienteTurnosTablaDiv.classList[1] == 'invisible') || (clienteTurnosTablaDiv.classList[0] == 'invisible') || (clienteTurnosTablaDiv.classList[2] == 'invisible')) {
 
@@ -154,6 +156,8 @@ const mostrarTurnos = () => {
 btnTurnos.addEventListener('click', mostrarTurnos);
 
 /* ======================================================== */
+
+// Fn para btn "Mis Turnos" (Segun abogado logueado)
 
 const mostrarTurnosRama = () => {
     if ((turnosAbogado.classList[1] == 'invisible') || (turnosAbogado.classList[0] == 'invisible') || (turnosAbogado.classList[2] == 'invisible') || (turnosAbogadoTablaDiv.classList[1] == 'invisible') || (turnosAbogadoTablaDiv.classList[0] == 'invisible') || (turnosAbogadoTablaDiv.classList[2] == 'invisible')) {
@@ -226,6 +230,8 @@ btnTurnosAbogado.addEventListener('click', mostrarTurnosRama);
 
 /* ======================================================== */
 
+// Formulario para cancelar turnos según ID
+
 const mostrarCancelacion = () => {
     if ((cancelarTurnoDatos.classList[1] == 'invisible') || (cancelarTurnoDatos.classList[0] == 'invisible') || (cancelarTurnoDatos.classList[2] == 'invisible')) {
 
@@ -249,6 +255,8 @@ const mostrarCancelacion = () => {
     }
 
 }
+
+// Fn del btn "Cancelar Turnos"
 
 const cancelarTurno = () => {
 

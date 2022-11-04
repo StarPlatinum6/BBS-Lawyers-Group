@@ -51,6 +51,9 @@ const clienteTurnosDocumento = document.getElementById("cp__clienteTurnos--docum
 const clienteTurnosInfo = document.getElementById("cp__clienteTurnos--informe");
 const clienteTurnosTabla = document.getElementById("cp__clienteTurnos--tabla");
 
+/* ======================================================== */
+
+// Accion para mostrar fomrulario en btn "Nuevo Turno"
 
 const mostrarFormulario = () => {
     if ((nuevoTurnoDatos.classList[1] == 'invisible') || (nuevoTurnoDatos.classList[0] == 'invisible') || (nuevoTurnoDatos.classList[2] == 'invisible')) {
@@ -241,6 +244,8 @@ const mostrarCancelacion = () => {
     }
 }
 
+// Fn que cancela el primer turno correpsondiente al cliente en el array de turnos.
+
 const cancelarTurno = () => {
     
     if ((turnosSolicitados.some((elemento) => elemento.Documento == documentoCliente)) == true) {
@@ -273,6 +278,8 @@ btnCancelarTurnoNo.addEventListener('click', mostrarCancelacion);
 btnCancelarTurnoSi.addEventListener('click', cancelarTurno);
 
 /* ======================================================== */
+
+// Fn del btn "Mis Datos" que muestra los datos de registro.
 
 const mostrarCliente = () => {
     if ((datosCliente.classList[1] == 'invisible') || (datosCliente.classList[0] == 'invisible') || (datosCliente.classList[2] == 'invisible') || (datosClienteInfo.classList[1] == 'invisible') || (datosClienteInfo.classList[0] == 'invisible') || (datosClienteInfo.classList[2] == 'invisible')) {

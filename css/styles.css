@@ -1531,8 +1531,17 @@ input[type='radio']:checked:after {
 /* Estilos para portal de Login */
 /* ============================= */
 
+@keyframes pan {
+    100% {background-position: 15% 50%;}
+}
+
 .login__main {
     padding: 50px 75px;
+    place-items: center;
+    background-image: url("../assets/images/polygon-scatter-haikei.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: pan 4s infinite alternate linear;
 }
 
 .login__main--titular {

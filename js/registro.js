@@ -22,6 +22,8 @@ formulario.addEventListener('submit', (e) => {
     localStorage.setItem("baseClientes", JSON.stringify(clientes));
 });
 
+// Funciones que alteran los estilos de los input si hay un error en el ingreso o son correctos.
+
 const estadoIncorrecto = (el, mensaje) => {
     const controlIngreso = el.parentElement;
     const errorDisplay = controlIngreso.querySelector('.incorrecto');
@@ -78,7 +80,7 @@ const validarIngresos = () => {
     let localidadValor = localidad.value.trim();
     let codigoPostalValor = codigoPostal.value.trim();
 
-/* ================== Validacion ================== */
+    /* ================== Validacion ================== */
 
     if (nombreValor === '') {
         estadoIncorrecto(nombre, 'El nombre es obligatorio');

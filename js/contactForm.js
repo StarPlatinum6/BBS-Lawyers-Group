@@ -1,3 +1,5 @@
+// Code para formulario de contacto de index.html y contacto.html
+
 const formularioContacto = document.querySelector("#formularioContacto");
 
 const formularioNombre = document.getElementById("formularioContacto__nombre");
