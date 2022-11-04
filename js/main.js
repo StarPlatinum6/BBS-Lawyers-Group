@@ -1,7 +1,3 @@
-// Al menos una librería de uso relevante para el proyecto. (SWAL ya está je)
-// Manejo de promesas con fetch. 
-// Carga de datos desde un JSON local o desde una API externa.
-
 /* ================== Icono hamburguesa animado: ================== */
 
 document.querySelector('.first-button').addEventListener('click', function () {

@@ -1873,3 +1873,44 @@ input[type='radio']:checked:after {
         padding: 50px 30px;
     }
 }
+
+/* ============================= */
+/* Estilos para Tarjeta de Clima */
+/* ============================= */
+
+.cp__clima {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    color: #dadada;
+    font-size: .8rem;
+    top: 310px;
+    left: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    position: absolute;
+}
+
+.cp__clima p {
+    margin: 0;
+    padding: 5px;
+}
+
+@media (max-width: 577px) {
+    .cp__clima {
+        padding: 3px;
+        font-size: .6rem;
+        top: 310px;
+        left: 10px;
+    }
+}
+
+@media (min-width: 578px) and (max-width: 768px) {
+    .cp__clima {
+        padding: 6px;
+        font-size: .7rem;
+        top: 310px;
+        left: 20px;
+    }
+}
