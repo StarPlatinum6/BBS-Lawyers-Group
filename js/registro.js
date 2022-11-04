@@ -208,6 +208,34 @@ const validarIngresos = () => {
         resultado.classList.remove('invisible');
         resultado.style.color = "#0ab96d";
         resultado.innerHTML = `<h5>¡El registro se realizó con éxito!</h5>`;
+            (async () => {
+                await tsParticles.load("tsparticles", {
+                    emitters: {
+                        life: {
+                            duration: 5,
+                            count: 1,
+                        },
+                        position: {
+                            x: 50,
+                            y: 0
+                        },
+                        size: {
+                            width: 60,
+                            height: 100
+                        },
+                        rate: {
+                            delay: 0.03,
+                            quantity: 5
+                        },
+                    },
+                    particles: {
+                        color: {
+                            value: ["#4974a5", "#e3f2fd", "#588dca"],
+                        },
+                },
+                preset: "confetti",
+            });
+        })();
         setTimeout (() => {
             resultado.classList.add('invisible');
         }, 4000);
